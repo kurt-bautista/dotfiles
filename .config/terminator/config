@@ -1,0 +1,30 @@
+[global_config]
+  always_split_with_profile = True
+  enabled_plugins = InactivityWatch, TerminatorThemes, ActivityWatch, LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  title_transmit_bg_color = "#00ab01"
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      profile = SpaceGray Eighties
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    cursor_color = "#aaaaaa"
+    font = Roboto Mono Medium 9
+    use_system_font = False
+  [[SpaceGray Eighties]]
+    audible_bell = True
+    background_color = "#222222"
+    background_darkness = 0.85
+    background_type = transparent
+    cursor_color = "#bbbbbb"
+    font = Roboto Mono Medium 9
+    foreground_color = "#bdbaae"
+    palette = "#15171c:#ec5f67:#81a764:#fec254:#5486c0:#bf83c1:#57c2c1:#efece7:#555555:#ff6973:#93d493:#ffd256:#4d84d1:#ff55ff:#83e9e4:#ffffff"
+    scrollback_lines = 5000
