@@ -4,11 +4,11 @@
 
 # terminal emulator
 super + Return
-	termite
+	terminator
 
 # program launcher
 super + @space
-	rofi -show run
+	rofi -show run --config /home/kurt/.config/rofi
 
 # make sxhkd reload its configuration files:
 super + Escape
