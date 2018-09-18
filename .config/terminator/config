@@ -1,8 +1,14 @@
 [global_config]
   always_split_with_profile = True
+  borderless = True
   enabled_plugins = InactivityWatch, TerminatorThemes, ActivityWatch, LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
   title_transmit_bg_color = "#00ab01"
 [keybindings]
+  go_down = <Alt>J
+  go_left = <Alt>H
+  go_right = <Alt>L
+  go_up = <Alt>K
+  layout_launcher = <Shift><Alt>l
 [layouts]
   [[default]]
     [[[child1]]]

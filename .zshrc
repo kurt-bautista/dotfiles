@@ -63,8 +63,9 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  vi-mode
+#  vi-mode
   command-not-found
+  history-substring-search
   pip
   python
   web-search
@@ -77,12 +78,12 @@ plugins=(
 # source <(cat ~/.fonts/*.sh)
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir_writable dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status virtualenv time vi_mode) 
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status virtualenv time) 
 POWERLEVEL9K_TIME_FORMAT="%D{%H:%M}"
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
 # \u$(echo $CODEPOINT_OF_AWESOME_CLOCK_O)
-POWERLEVEL9K_VI_INSERT_MODE_STRING="I"
-POWERLEVEL9K_VI_COMMAND_MODE_STRING="N"
+#POWERLEVEL9K_VI_INSERT_MODE_STRING="I"
+#POWERLEVEL9K_VI_COMMAND_MODE_STRING="N"
 source $ZSH/oh-my-zsh.sh
 
 # User configuration

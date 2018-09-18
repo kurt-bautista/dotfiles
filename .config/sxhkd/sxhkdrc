@@ -119,3 +119,12 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+#
+# my custom keybindings
+#
+
+# lock screen
+ctrl + alt + l
+	/home/kurt/i3lock/lock -n -p
+	#betterlockscreen --lock blur
