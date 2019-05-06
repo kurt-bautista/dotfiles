@@ -125,6 +125,29 @@ super + {Left,Down,Up,Right}
 #
 
 # lock screen
-ctrl + alt + l
-	/home/kurt/i3lock/lock -n -p
-	#betterlockscreen --lock blur
+ctrl + shift + l
+	betterlockscreen --lock
+
+#
+# media
+#
+
+@XF86AudioMute
+  amixer -D pulse set Master 1+ toggle
+
+@XF86Audio{Raise,Lower}Volume
+  amixer -q -c 0 set Master playback 1dB{+,-}
+
+@XF86AudioPlay
+  playerctl play-pause
+
+@XF86AudioStop
+  playerctl stop
+
+@XF86Audio{Prev,Next}
+  playerctl {previous,next}
+
+# screenshot
+# area, clipboard
+#ctrl + shift + Print
+#	gnome-screenshot -a -c
