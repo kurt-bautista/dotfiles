@@ -1,5 +1,6 @@
 [options]
 font = Roboto Mono Medium 10
+scrollback_lines = -1
 
 [colors]
 # Base16 Material Darker
