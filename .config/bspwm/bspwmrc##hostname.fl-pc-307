@@ -12,14 +12,14 @@ bspc monitor DP-0 -d 1 2 3 4
 #xrandr --output DVI-I-1 --off --output DVI-I-0 --primary --mode 1920x1080 --pos 2560x57 --rotate normal --output HDMI-0 --off --output DP-5 --off --output DP-4 --off --output DP-3 --off --output DP-2 --off --output DP-1 --off --output DP-0 --mode 2560x1440 --pos 0x0 --rotate normal
 xrandr --output DVI-I-1 --off --output DVI-I-0 --primary --mode 1920x1080 --pos 2560x129 --rotate normal --output HDMI-0 --off --output DP-5 --off --output DP-4 --off --output DP-3 --off --output DP-2 --off --output DP-1 --off --output DP-0 --mode 2560x1440 --pos 0x0 --rotate normal
 
-bspc config border_width         3
+bspc config border_width         2
 bspc config window_gap          14
 
 bspc config normal_border_color "#EEEEEE"
 bspc config active_border_color "#66D7D1"
 bspc config focused_border_color "#FF9200"
 
-bspc config split_ratio          0.52
+bspc config split_ratio          0.5
 bspc config borderless_monocle   false
 bspc config gapless_monocle      true
 bspc config single_monocle       true
