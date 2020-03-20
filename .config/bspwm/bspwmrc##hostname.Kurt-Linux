@@ -28,5 +28,5 @@ bspc config single_monocle       true
 #bspc rule -a Screenkey manage=off
 
 #nitrogen --restore &
-#$HOME/.config/polybar/launch.sh
+$HOME/.config/polybar/launch.sh
 
