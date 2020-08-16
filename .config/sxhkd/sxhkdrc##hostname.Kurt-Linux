@@ -124,30 +124,53 @@ super + {Left,Down,Up,Right}
 # my custom keybindings
 #
 
+# switch windows
+alt + Tab
+	rofi -show window -kb-accept-entry "!Alt-Tab,!Alt+Alt_L" \
+		-kb-row-down "Alt+Tab" -kb-row-up "Alt+Shift+Tab" \
+		-selected-row 1
+	# # # # # # # # # rofi -show window
+
 # lock screen
 ctrl + shift + l
-	betterlockscreen --lock
+	betterlockscreen --lock --off 10
 
 #
 # media
 #
 
 @XF86AudioMute
-  amixer -D pulse set Master 1+ toggle
+  pactl set-sink-mute 0 toggle
 
-@XF86Audio{Raise,Lower}Volume
-  amixer -q -c 0 set Master playback 1dB{+,-}
+@XF86AudioRaiseVolume
+  sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 +1%"
+
+@XF86AudioLowerVolume
+  sh -c "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 -1%"
 
 @XF86AudioPlay
-  playerctl play-pause
+  playerctl -p spotify play-pause
 
 @XF86AudioStop
-  playerctl stop
+  playerctl -p spotify stop
 
 @XF86Audio{Prev,Next}
-  playerctl {previous,next}
+  playerctl -p spotify {previous,next}
+
+#
+# fn keys
+#
+
+@XF86MonBrightnessDown
+  light -U 4
+
+@XF86MonBrightnessUp
+  light -A 4
 
 # screenshot
-# area, clipboard
-#ctrl + shift + Print
-#	gnome-screenshot -a -c
+super + shift + s
+  flameshot gui
+
+Print
+  flameshot full -p ~/Pictures/Screenshots
+
