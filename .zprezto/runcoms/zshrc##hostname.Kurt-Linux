@@ -44,4 +44,5 @@ alias upd="pacU"
 alias 60hz="xrandr --output HDMI-1-0 --mode 2560x1440 --rate 60.00"
 alias 144hz="xrandr --output HDMI-1-0 --mode 2560x1440 --rate 144.00"
 alias gcom="gco master"
+alias gmm="gm master"
 
