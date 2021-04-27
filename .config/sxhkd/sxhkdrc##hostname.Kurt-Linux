@@ -143,10 +143,10 @@ ctrl + shift + l
   pactl set-sink-mute alsa_output.pci-0000_00_1f.3.analog-stereo toggle
 
 @XF86AudioRaiseVolume
-  sh -c "pactl set-sink-mute alsa_output.pci-0000_00_1f.3.analog-stereo false ; pactl set-sink-volume alsa_output.pci-0000_00_1f.3.analog-stereo +1%"
+  sh -c "pactl set-sink-mute alsa_output.pci-0000_00_1f.3.output_analog-stereo false ; pactl set-sink-volume alsa_output.pci-0000_00_1f.3.output_analog-stereo +1%"
 
 @XF86AudioLowerVolume
-  sh -c "pactl set-sink-mute alsa_output.pci-0000_00_1f.3.analog-stereo false ; pactl set-sink-volume alsa_output.pci-0000_00_1f.3.analog-stereo -1%"
+  sh -c "pactl set-sink-mute alsa_output.pci-0000_00_1f.3.output_analog-stereo false ; pactl set-sink-volume alsa_output.pci-0000_00_1f.3.output_analog-stereo -1%"
 
 @XF86AudioPlay
   playerctl -p spotify play-pause
